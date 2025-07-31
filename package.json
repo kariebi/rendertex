@@ -1,0 +1,56 @@
+{
+  "name": "rendertex",
+  "version": "1.0.0",
+  "description": "A powerful React rendering library for Markdown, MDX, LaTeX, and KaTeX with full customization, theme support, and graceful fallbacks.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --dts --format esm,cjs",
+    "build": "tsup src/index.ts --dts --format esm,cjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write src/**/*.ts",
+    "lint": "prettier --check ."
+  },
+  "keywords": [
+    "markdown",
+    "latex",
+    "katex",
+    "mdx",
+    "react",
+    "mathpix",
+    "markdown-it",
+    "renderer",
+    "markdown-renderer",
+    "latex-to-html",
+    "katex-renderer",
+    "mdx-renderer",
+    "math",
+    "ssr",
+    "customizable"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kariebi/rendertex"
+  },
+  "bugs": {
+    "url": "https://github.com/kariebi/rendertex/issues"
+  },
+  "homepage": "https://github.com/kariebi/rendertex#readme",
+  "author": "Soroh 'Kariebi' Michael",
+  "license": "MIT",
+  "dependencies": {
+    "mathpix-markdown-it": "^2.0.16",
+    "react": "^19.1.1",
+    "react-native": "^0.80.2",
+    "react-native-autoheight-webview": "^1.6.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  }
+}
