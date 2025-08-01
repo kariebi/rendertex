@@ -8,6 +8,11 @@
   "files": [
     "dist"
   ],
+  "author": {
+    "name": "Soroh 'Kariebi' Michael",
+    "email": "sorohmichael@gmail.com",
+    "url": "https://kariebi.vercel.app"
+  },
   "scripts": {
     "dev": "tsup src/index.ts --watch --dts --format esm,cjs",
     "build": "tsup src/index.ts --dts --format esm,cjs",
@@ -21,6 +26,7 @@
     "katex",
     "mdx",
     "react",
+    "react-native",
     "mathpix",
     "markdown-it",
     "renderer",
@@ -30,7 +36,9 @@
     "mdx-renderer",
     "math",
     "ssr",
-    "customizable"
+    "customizable",
+    "typescript",
+    "types"
   ],
   "repository": {
     "type": "git",
@@ -40,17 +48,22 @@
     "url": "https://github.com/kariebi/rendertex/issues"
   },
   "homepage": "https://github.com/kariebi/rendertex#readme",
-  "author": "Soroh 'Kariebi' Michael",
   "license": "MIT",
   "dependencies": {
-    "mathpix-markdown-it": "^2.0.16",
-    "react": "^19.1.1",
-    "react-native": "^0.80.2",
-    "react-native-autoheight-webview": "^1.6.5"
+    "mathpix-markdown-it": "^2.0.16"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-native": "^0.70.0 || ^0.80.0"
   },
   "devDependencies": {
+    "react": "^19.1.1",
+    "react-native": "^0.80.2",
     "prettier": "^3.6.2",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
